@@ -95,6 +95,8 @@ if __name__ == "__main__":
       "log_device_placement", False,
       "Whether to write the device on which every op will run into the "
       "logs on startup.")
+  flags.DEFINE_integer("vocab_size", 2, "Number of classes")
+  flags.DEFINE_integer("num_mixtures",2,"Number of Mixture")
 
 def validate_class_name(flag_value, category, modules, expected_superclass):
   """Checks that the given string matches a class of the expected type.
