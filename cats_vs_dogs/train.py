@@ -97,6 +97,7 @@ if __name__ == "__main__":
       "logs on startup.")
   flags.DEFINE_integer("vocab_size", 2, "Number of classes")
   flags.DEFINE_integer("num_mixtures",2,"Number of Mixture")
+  flags.DEFINE_integer("moe_num_mixtures",2,"Number of Mixtures")
 
 def validate_class_name(flag_value, category, modules, expected_superclass):
   """Checks that the given string matches a class of the expected type.
